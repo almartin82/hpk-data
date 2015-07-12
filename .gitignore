@@ -55,3 +55,16 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# pycharm
+.idea/
+*.py___jb_bak___
+
+# package specific
+credentials.yml
+.Rproj.user
+
+#R stuff
+*.Rhistory
+*.Rproj
+.RData
