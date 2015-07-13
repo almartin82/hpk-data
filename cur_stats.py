@@ -58,4 +58,4 @@ for day in dd:
 
 #up to s3
 conn = tinys3.Connection(aws_access_key, aws_secret_access_key, tls=True)
-conn.upload('hpk2015.csv', stat_df.to_csv(), 'my_bucket')
+conn.upload('hpk_2015.csv', stat_df.to_csv(), 'hpk')
