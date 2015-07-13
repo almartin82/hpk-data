@@ -68,3 +68,6 @@ credentials.yml
 *.Rhistory
 *.Rproj
 .RData
+
+
+index.html

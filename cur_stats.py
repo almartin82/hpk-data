@@ -1,5 +1,5 @@
-#my stuff
-import yahoo_api, functions, resources
+#local stuff
+import yahoo_api, functions, resources, pasteee
 
 #standard
 from getpass import getuser
@@ -9,6 +9,7 @@ import os
 #external (remember to update requirements.txt for heroku)
 import yaml
 import pandas
+import tinys3
 
 #heroku or local
 if getuser() == 'amartin':
@@ -20,6 +21,8 @@ if getuser() == 'amartin':
     access_token = creds['access_token']
     access_token_secret = creds['access_token_secret']
     session_handle = creds['session_handle']
+    aws_access_key = creds['aws_access_key']
+    aws_secret_access_key = creds['aws_secret_access_key']
 else:
     #remote == os.environ
     key = os.environ['consumer_key']
@@ -27,6 +30,8 @@ else:
     access_token = os.environ['access_token']
     access_token_secret = os.environ['access_token_secret']
     session_handle = os.environ['session_handle']
+    aws_access_key = os.environ['aws_access_key']
+    aws_secret_access_key = os.environ['aws_secret_access_key']
 
 #initialize a yahoo session
 y = yahoo_api.YahooAPI(
@@ -39,7 +44,7 @@ y = yahoo_api.YahooAPI(
 
 d = resources.yr_2015
 #dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days + 1)]
-dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days - 75)]
+dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days - 85)]
 
 stat_df = pandas.DataFrame()
 
@@ -51,4 +56,6 @@ for day in dd:
         df = functions.process_team_stats(raw)
         stat_df = stat_df.append(df)
 
-print stat_df
+#up to s3
+conn = tinys3.Connection(aws_access_key, aws_secret_access_key, tls=True)
+conn.upload('hpk2015.csv', stat_df.to_csv(), 'my_bucket')
