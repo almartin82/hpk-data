@@ -39,15 +39,21 @@ def process_managers(managers):
 
 
 def process_team_stats(raw):
+    #grab the stat part of the dict
     stats = raw['fantasy_content']['team']['team_stats']['stats']['stat']
+    #convert to df
     df = pd.DataFrame.from_dict(stats)
     df['date'] = raw['fantasy_content']['team']['team_stats']['date']
     df['team_key'] = raw['fantasy_content']['team']['team_key']
 
+    #managers can sometimes have co-managers.  collapse.
     managers = process_managers(raw['fantasy_content']['team']['managers']['manager'])
     df['manager'] = managers
+    df['team_name'] = raw['fantasy_content']['team']['name']
+    #convert the stat id to stat name
     df = pd.concat([df, resources.stat_names], axis=1, join='inner')
     return df
+
 
 def data_to_csv(target_dir, data_to_write, desired_name):
     """Convenience function to write a dict to CSV with appropriate parameters."""
