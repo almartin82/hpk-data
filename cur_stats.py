@@ -62,10 +62,11 @@ for day in dd:
         stat_df = stat_df.append(df)
 
 #up to s3
-stat_df.to_csv('hpk_2015.csv', index=False)
 conn = tinys3.Connection(aws_access_key, aws_secret_access_key, tls=True)
+stat_df.to_csv('hpk_2015.csv', index=False, encoding='utf-8')
 f = open('hpk_2015.csv','rb')
 conn.upload('hpk_2015.csv', f, 'hpk')
+print conn
 
 #send receipt email to ALM
 mandrill_client = mandrill.Mandrill(mandrill_key)
