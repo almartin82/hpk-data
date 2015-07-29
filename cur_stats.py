@@ -81,3 +81,6 @@ message = {
          'type': 'to'}]
 }
 result = mandrill_client.messages.send(message=message)
+
+#dead man's snitch
+ requests.get('https://nosnch.in/87d799f117')
