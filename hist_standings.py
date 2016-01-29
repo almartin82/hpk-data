@@ -49,8 +49,15 @@ y = yahoo_api.YahooAPI(
     session_handle=session_handle
 )
 
+standings_df = pandas.DataFrame()
+
 for i in resources.all_leagues:
     print(i)
     r = functions.make_standings_req(i['gameid'], i['leagueid'])
-    print(r)
     raw = y.api_query(r)
+    teams = functions.process_standings(raw)
+    for j in teams:
+        clean_team = functions.process_one_standing_team(j)
+        standings_df = standings_df.append(clean_team)
+
+standings_df.to_csv('data/standings.csv', encoding='utf-8')

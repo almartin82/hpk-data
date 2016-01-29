@@ -6,3 +6,4 @@ mandrill
 pandas
 pytz
 python-dateutil
+unicodecsv

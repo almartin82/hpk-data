@@ -73,3 +73,6 @@ credentials.yml
 index.html
 robots.txt
 hpk_2015.csv
+/data
+
+.DS_Store

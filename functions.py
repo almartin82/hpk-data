@@ -1,6 +1,8 @@
 import pandas as pd
 import resources
 import os
+from collections import OrderedDict
+import unicodecsv
 
 
 def make_standings_req(gameid, leagueid):
@@ -59,6 +61,22 @@ def process_team_stats(raw):
     df['team_name'] = raw['fantasy_content']['team']['name']
     #convert the stat id to stat name
     df = pd.concat([df, resources.stat_names], axis=1, join='inner')
+    return df
+
+
+def process_standings(raw):
+    stats = raw['fantasy_content']['league']['standings']['teams']['team']
+    return stats
+
+
+def process_one_standing_team(team):
+    stat_dict = team['team_stats']['stats']['stat']
+    df = pd.DataFrame.from_dict(stat_dict)
+    #convert the stat id to stat name
+    df = pd.concat([df, resources.stat_names], axis=1, join='inner')
+    df['team_key'] = team['team_key']
+    df['manager'] = process_managers(team['managers']['manager'])
+    df['team_name'] = team['name']
     return df
 
 
