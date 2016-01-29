@@ -2,6 +2,13 @@ import pandas as pd
 import resources
 import os
 
+
+def make_standings_req(gameid, leagueid):
+    base = "http://fantasysports.yahooapis.com/fantasy/v2/league/"
+    sub_resource = "/standings"
+    final = base + str(gameid) + '.l.' + str(leagueid) + sub_resource
+    return final
+
 def make_daily_stats_req(team, date):
     base = "http://fantasysports.yahooapis.com/fantasy/v2/team/"
     sub_resource = "/stats;type=date;date="

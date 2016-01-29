@@ -7,10 +7,11 @@ stat_names = pd.DataFrame(
      'stat_name': ['AVG', 'R', 'RBI', 'SB', 'TB', 'OBP', 'IP', 'W', 'SV', 'K', 'ERA', 'WHIP']}
 )
 
-
 #### YAHOO TEAMS ####
 #current yahoo codes
-hpk_teams_cur = [
+hpk_teams_cur = []
+
+hpk_teams_2015 = [
     '346.l.49099.t.1', '346.l.49099.t.2', '346.l.49099.t.3',
     '346.l.49099.t.4', '346.l.49099.t.5', '346.l.49099.t.6',
     '346.l.49099.t.7', '346.l.49099.t.8', '346.l.49099.t.9',
@@ -85,3 +86,31 @@ yr_2015 = [date(2015, 4, 05), date.today()]
 yr_2014 = [date(2014, 3, 22), date(2014, 9, 28)]
 yr_2013 = [date(2013, 4, 01), date(2013, 9, 29)]
 yr_2012 = [date(2012, 3, 28), date(2012, 10, 3)]
+
+#### LEAGUE INFO ####
+all_leagues = [
+    # #2016 (no league yet)
+    # {'gameid': 357, 'leagueid': 00000},
+    #2015
+    {'gameid': 346, 'leagueid': 49099},
+    #2014
+    {'gameid': 328, 'leagueid': 69518},
+    #2013
+    {'gameid': 308, 'leagueid': 54481},
+    #2012
+    {'gameid': 268, 'leagueid': 14615},
+    #2011
+    {'gameid': 253, 'leagueid': 27468},
+    #2010
+    {'gameid': 238, 'leagueid': 432962},
+    #2009
+    {'gameid': 215, 'leagueid': 67870},
+    #2008
+    {'gameid': 195, 'leagueid': 168490},
+    #2007 (we were 'pro' this year
+    {'gameid': 172, 'leagueid': 5643},
+    #2006
+    {'gameid': 147, 'leagueid': 72277},
+    #2005
+    {'gameid': 113, 'leagueid': 58563}
+]
