@@ -5,6 +5,7 @@ import yahoo_api, functions, resources
 from getpass import getuser
 from datetime import date, timedelta
 from time import gmtime, strftime
+from getpass import getuser
 import os
 
 #external (remember to update requirements.txt for heroku)
@@ -14,7 +15,7 @@ import tinys3
 import mandrill
 
 #heroku or local
-if getuser() == 'amartin':
+if getuser() == 'almartin':
     #local == yaml
     with open("credentials.yml", 'r') as ymlfile:
         creds = yaml.load(ymlfile)
@@ -54,7 +55,7 @@ dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days + 1)]
 stat_df = pandas.DataFrame()
 
 for day in dd:
-    print day
+    print(day)
     for team in resources.hpk_teams_cur:
         r = functions.make_daily_stats_req(team, day)
         raw = y.api_query(r)
@@ -66,7 +67,7 @@ conn = tinys3.Connection(aws_access_key, aws_secret_access_key, tls=True)
 stat_df.to_csv('hpk_2015.csv', index=False, encoding='utf-8')
 f = open('hpk_2015.csv','rb')
 conn.upload('hpk_2015.csv', f, 'hpk')
-print conn
+print(conn)
 
 #send receipt email to ALM
 mandrill_client = mandrill.Mandrill(mandrill_key)

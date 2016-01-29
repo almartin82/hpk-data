@@ -1,3 +1,4 @@
+from __future__ import print_function
 import rauth
 from rauth.utils import parse_utf8_qsl
 import time
@@ -48,8 +49,8 @@ class YahooAPI:
 
             authorize_url = self.oauth.get_authorize_url(request_token)
 
-            print "Sign in here: " + str(authorize_url)
-            verification_code = raw_input("Enter code: ")
+            print("Sign in here: " + str(authorize_url))
+            verification_code = input("Enter code: ")
 
             self.access_token_time = time.time()
 
@@ -65,7 +66,7 @@ class YahooAPI:
                 "session_handle": parsed_access_token["oauth_session_handle"]
             }
 
-            print self.saved_token
+            print(self.saved_token)
 
             self.session = self.oauth.get_session(
                 (self.saved_token["access_token"],
