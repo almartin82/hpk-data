@@ -9,7 +9,17 @@ stat_names = pd.DataFrame(
 
 #### YAHOO TEAMS ####
 #current yahoo codes
-hpk_teams_cur = []
+hpk_teams_cur = [
+    '370.l.107101.t.1', '370.l.107101.t.2', '370.l.107101.t.3',
+    '370.l.107101.t.4', '370.l.107101.t.5', '370.l.107101.t.6',
+    '370.l.107101.t.7', '370.l.107101.t.8', '370.l.107101.t.9',
+    '370.l.107101.t.10', '370.l.107101.t.11', '370.l.107101.t.12']
+
+hpk_teams_2016 = [
+    '357.l.91406.t.1', '357.l.91406.t.2', '357.l.91406.t.3',
+    '357.l.91406.t.4', '357.l.91406.t.5', '357.l.91406.t.6',
+    '357.l.91406.t.7', '357.l.91406.t.8', '357.l.91406.t.9',
+    '357.l.91406.t.10', '357.l.91406.t.11', '357.l.91406.t.12']
 
 hpk_teams_2015 = [
     '346.l.49099.t.1', '346.l.49099.t.2', '346.l.49099.t.3',
@@ -79,18 +89,25 @@ hpk_teams_2005 = [
     '113.l.58563.t.4', '113.l.58563.t.5', '113.l.58563.t.6',
     '113.l.58563.t.7', '113.l.58563.t.8', '113.l.58563.t.9']
 
-all_hpk_teams = hpk_teams_cur + hpk_teams_2014 + hpk_teams_2013 + hpk_teams_2012 + hpk_teams_2011 + hpk_teams_2010 + hpk_teams_2009 + hpk_teams_2008 + hpk_teams_2007 + hpk_teams_2006 + hpk_teams_2005
+all_hpk_teams = hpk_teams_cur + hpk_teams_2016 + hpk_teams_2015 + \
+                hpk_teams_2014 + hpk_teams_2013 + hpk_teams_2012 + \
+                hpk_teams_2011 + hpk_teams_2010 + hpk_teams_2009 + \
+                hpk_teams_2008 + hpk_teams_2007 + hpk_teams_2006 + hpk_teams_2005
 
 #### START/END YEARS ####
-yr_2015 = [date(2015, 4, 05), date.today()]
+yr_2017 = [date(2017, 4, 02), date.today()]
+yr_2016 = [date(2016, 4, 03), date(2016, 10, 2)]
+yr_2015 = [date(2015, 4, 05), date(2015, 10, 4)]
 yr_2014 = [date(2014, 3, 22), date(2014, 9, 28)]
 yr_2013 = [date(2013, 4, 01), date(2013, 9, 29)]
 yr_2012 = [date(2012, 3, 28), date(2012, 10, 3)]
 
 #### LEAGUE INFO ####
 all_leagues = [
-    # #2016 (no league yet)
-    # {'gameid': 357, 'leagueid': 00000},
+    #2017
+    {'gameid': 370, 'leagueid': 107101},
+    #2016
+    {'gameid': 357, 'leagueid': 91406},
     #2015
     {'gameid': 346, 'leagueid': 49099},
     #2014
