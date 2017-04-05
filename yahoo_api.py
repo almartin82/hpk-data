@@ -11,7 +11,7 @@ class YahooAPI:
     access_token_lifetime = 3600
 
     # one request every X seconds to try to prevent 999 error codes
-    request_period = 2
+    request_period = 3
 
     def __init__(self, consumer_key, consumer_secret, access_token=None,
                  access_token_secret=None, session_handle=None):
@@ -103,9 +103,23 @@ class YahooAPI:
 
         return self.session.get(request_str)
 
-    def api_query(self, request_str):
+    def api_query(self, request_str, retry = 0, terminate = 9):
         resp = self.request(request_str)
-        if resp.status_code == 999:
-            raise Exception("got a 999 response; exceeded yahoo's rate limit.")
-        return xmltodict.parse(resp.content)
+        if resp.status_code == 200:
+            if (retry > 0):
+                print(resp.content)
+            return xmltodict.parse(resp.content)
+        elif retry > terminate:
+            print(resp.status_code)
+            raise Exception("retried too many times, terminating.")
+        elif resp.status_code == 999:
+            print(resp.status_code)
+            print('999 status code, sleeping for 1 min')
+            time.sleep(60)
+        #we are getting random status 500s from yahoo?!
+        else:
+            print(resp.status_code)
+            print('retrying...')
+            time.sleep(5)
+            self.api_query(request_str = request_str, retry = retry + 1)
 
