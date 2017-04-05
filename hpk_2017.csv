@@ -1,0 +1,433 @@
+stat_id,value,date,team_key,manager,team_name,stat_id,stat_name
+60,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,60,AVG
+7,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,7,R
+13,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,13,RBI
+16,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,16,SB
+23,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,23,TB
+4,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,4,OBP
+50,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,50,IP
+28,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,28,W
+32,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,32,SV
+42,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,42,K
+26,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,26,ERA
+27,-,2017-04-02,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,27,WHIP
+60,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,60,AVG
+7,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,7,R
+13,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,13,RBI
+16,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,16,SB
+23,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,23,TB
+4,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,4,OBP
+50,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,50,IP
+28,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,28,W
+32,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,32,SV
+42,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,42,K
+26,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,26,ERA
+27,-,2017-04-02,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,27,WHIP
+60,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,60,AVG
+7,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,7,R
+13,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,13,RBI
+16,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,16,SB
+23,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,23,TB
+4,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,4,OBP
+50,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,50,IP
+28,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,28,W
+32,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,32,SV
+42,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,42,K
+26,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,26,ERA
+27,-,2017-04-02,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,27,WHIP
+60,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,60,AVG
+7,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,7,R
+13,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,13,RBI
+16,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,16,SB
+23,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,23,TB
+4,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,4,OBP
+50,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,50,IP
+28,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,28,W
+32,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,32,SV
+42,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,42,K
+26,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,26,ERA
+27,-,2017-04-02,370.l.107101.t.4,Eric N,d'arnaud bad days,27,WHIP
+60,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,60,AVG
+7,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,7,R
+13,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,13,RBI
+16,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,16,SB
+23,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,23,TB
+4,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,4,OBP
+50,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,50,IP
+28,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,28,W
+32,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,32,SV
+42,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,42,K
+26,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,26,ERA
+27,-,2017-04-02,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,27,WHIP
+60,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,60,AVG
+7,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,7,R
+13,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,13,RBI
+16,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,16,SB
+23,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,23,TB
+4,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,4,OBP
+50,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,50,IP
+28,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,28,W
+32,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,32,SV
+42,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,42,K
+26,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,26,ERA
+27,-,2017-04-02,370.l.107101.t.6,Mike Cardarelli,Lindsanity,27,WHIP
+60,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,60,AVG
+7,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,7,R
+13,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,13,RBI
+16,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,16,SB
+23,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,23,TB
+4,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,4,OBP
+50,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,50,IP
+28,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,28,W
+32,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,32,SV
+42,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,42,K
+26,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,26,ERA
+27,-,2017-04-02,370.l.107101.t.7,Andrew,Meet the Matz,27,WHIP
+60,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,60,AVG
+7,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,7,R
+13,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,13,RBI
+16,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,16,SB
+23,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,23,TB
+4,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,4,OBP
+50,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,50,IP
+28,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,28,W
+32,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,32,SV
+42,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,42,K
+26,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,26,ERA
+27,-,2017-04-02,370.l.107101.t.8,wutang,Mookie Fucking Betts,27,WHIP
+60,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,60,AVG
+7,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,7,R
+13,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,13,RBI
+16,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,16,SB
+23,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,23,TB
+4,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,4,OBP
+50,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,50,IP
+28,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,28,W
+32,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,32,SV
+42,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,42,K
+26,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,26,ERA
+27,-,2017-04-02,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,27,WHIP
+60,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,60,AVG
+7,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,7,R
+13,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,13,RBI
+16,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,16,SB
+23,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,23,TB
+4,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,4,OBP
+50,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,50,IP
+28,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,28,W
+32,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,32,SV
+42,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,42,K
+26,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,26,ERA
+27,-,2017-04-02,370.l.107101.t.10,Mike,Starling and scrubs,27,WHIP
+60,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,60,AVG
+7,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,7,R
+13,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,13,RBI
+16,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,16,SB
+23,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,23,TB
+4,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,4,OBP
+50,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,50,IP
+28,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,28,W
+32,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,32,SV
+42,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,42,K
+26,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,26,ERA
+27,-,2017-04-02,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,27,WHIP
+60,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,60,AVG
+7,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,7,R
+13,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,13,RBI
+16,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,16,SB
+23,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,23,TB
+4,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,4,OBP
+50,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,50,IP
+28,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,28,W
+32,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,32,SV
+42,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,42,K
+26,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,26,ERA
+27,-,2017-04-02,370.l.107101.t.12,alm,lindor recess,27,WHIP
+60,7/28,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,60,AVG
+7,4,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,7,R
+13,5,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,13,RBI
+16,0,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,16,SB
+23,17,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,23,TB
+4,.290,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,4,OBP
+50,15.0,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,50,IP
+28,1,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,28,W
+32,1,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,32,SV
+42,9,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,42,K
+26,4.20,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,26,ERA
+27,1.40,2017-04-03,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,27,WHIP
+60,4/16,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,60,AVG
+7,2,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,7,R
+13,1,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,13,RBI
+16,2,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,16,SB
+23,5,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,23,TB
+4,.429,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,4,OBP
+50,8.1,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,50,IP
+28,1,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,28,W
+32,1,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,32,SV
+42,4,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,42,K
+26,0.00,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,26,ERA
+27,0.84,2017-04-03,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,27,WHIP
+60,10/33,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,60,AVG
+7,5,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,7,R
+13,6,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,13,RBI
+16,1,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,16,SB
+23,21,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,23,TB
+4,.303,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,4,OBP
+50,-,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,50,IP
+28,-,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,28,W
+32,-,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,32,SV
+42,-,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,42,K
+26,-,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,26,ERA
+27,-,2017-04-03,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,27,WHIP
+60,15/35,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,60,AVG
+7,9,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,7,R
+13,10,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,13,RBI
+16,0,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,16,SB
+23,37,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,23,TB
+4,.500,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,4,OBP
+50,3.2,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,50,IP
+28,0,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,28,W
+32,1,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,32,SV
+42,3,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,42,K
+26,2.45,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,26,ERA
+27,0.55,2017-04-03,370.l.107101.t.4,Eric N,d'arnaud bad days,27,WHIP
+60,8/35,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,60,AVG
+7,5,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,7,R
+13,10,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,13,RBI
+16,0,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,16,SB
+23,22,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,23,TB
+4,.275,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,4,OBP
+50,11.2,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,50,IP
+28,0,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,28,W
+32,0,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,32,SV
+42,9,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,42,K
+26,3.86,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,26,ERA
+27,1.29,2017-04-03,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,27,WHIP
+60,6/28,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,60,AVG
+7,3,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,7,R
+13,4,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,13,RBI
+16,0,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,16,SB
+23,10,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,23,TB
+4,.241,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,4,OBP
+50,13.0,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,50,IP
+28,0,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,28,W
+32,1,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,32,SV
+42,21,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,42,K
+26,4.15,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,26,ERA
+27,1.46,2017-04-03,370.l.107101.t.6,Mike Cardarelli,Lindsanity,27,WHIP
+60,4/27,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,60,AVG
+7,1,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,7,R
+13,0,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,13,RBI
+16,0,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,16,SB
+23,8,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,23,TB
+4,.148,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,4,OBP
+50,17.0,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,50,IP
+28,0,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,28,W
+32,0,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,32,SV
+42,19,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,42,K
+26,3.71,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,26,ERA
+27,1.12,2017-04-03,370.l.107101.t.7,Andrew,Meet the Matz,27,WHIP
+60,9/24,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,60,AVG
+7,2,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,7,R
+13,4,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,13,RBI
+16,2,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,16,SB
+23,13,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,23,TB
+4,.444,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,4,OBP
+50,4.0,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,50,IP
+28,1,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,28,W
+32,1,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,32,SV
+42,7,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,42,K
+26,0.00,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,26,ERA
+27,0.75,2017-04-03,370.l.107101.t.8,wutang,Mookie Fucking Betts,27,WHIP
+60,11/31,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,60,AVG
+7,8,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,7,R
+13,5,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,13,RBI
+16,0,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,16,SB
+23,21,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,23,TB
+4,.459,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,4,OBP
+50,11.2,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,50,IP
+28,0,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,28,W
+32,0,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,32,SV
+42,9,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,42,K
+26,7.71,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,26,ERA
+27,1.54,2017-04-03,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,27,WHIP
+60,4/21,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,60,AVG
+7,4,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,7,R
+13,6,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,13,RBI
+16,1,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,16,SB
+23,12,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,23,TB
+4,.308,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,4,OBP
+50,2.0,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,50,IP
+28,0,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,28,W
+32,1,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,32,SV
+42,3,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,42,K
+26,0.00,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,26,ERA
+27,1.00,2017-04-03,370.l.107101.t.10,Mike,Starling and scrubs,27,WHIP
+60,5/33,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,60,AVG
+7,1,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,7,R
+13,2,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,13,RBI
+16,0,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,16,SB
+23,5,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,23,TB
+4,.243,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,4,OBP
+50,14.1,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,50,IP
+28,2,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,28,W
+32,1,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,32,SV
+42,14,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,42,K
+26,3.77,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,26,ERA
+27,0.77,2017-04-03,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,27,WHIP
+60,7/29,2017-04-03,370.l.107101.t.12,alm,lindor recess,60,AVG
+7,6,2017-04-03,370.l.107101.t.12,alm,lindor recess,7,R
+13,3,2017-04-03,370.l.107101.t.12,alm,lindor recess,13,RBI
+16,1,2017-04-03,370.l.107101.t.12,alm,lindor recess,16,SB
+23,14,2017-04-03,370.l.107101.t.12,alm,lindor recess,23,TB
+4,.378,2017-04-03,370.l.107101.t.12,alm,lindor recess,4,OBP
+50,6.0,2017-04-03,370.l.107101.t.12,alm,lindor recess,50,IP
+28,0,2017-04-03,370.l.107101.t.12,alm,lindor recess,28,W
+32,0,2017-04-03,370.l.107101.t.12,alm,lindor recess,32,SV
+42,4,2017-04-03,370.l.107101.t.12,alm,lindor recess,42,K
+26,3.00,2017-04-03,370.l.107101.t.12,alm,lindor recess,26,ERA
+27,1.17,2017-04-03,370.l.107101.t.12,alm,lindor recess,27,WHIP
+60,0/7,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,60,AVG
+7,0,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,7,R
+13,0,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,13,RBI
+16,0,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,16,SB
+23,0,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,23,TB
+4,.222,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,4,OBP
+50,4.0,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,50,IP
+28,0,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,28,W
+32,0,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,32,SV
+42,4,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,42,K
+26,4.50,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,26,ERA
+27,1.25,2017-04-04,370.l.107101.t.1,"Happy Chandler, Adam Peindl",The Young Polanco,27,WHIP
+60,3/16,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,60,AVG
+7,2,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,7,R
+13,1,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,13,RBI
+16,0,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,16,SB
+23,6,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,23,TB
+4,.188,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,4,OBP
+50,5.1,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,50,IP
+28,0,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,28,W
+32,0,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,32,SV
+42,2,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,42,K
+26,10.12,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,26,ERA
+27,1.50,2017-04-04,370.l.107101.t.2,Bud Light Black,Neil Walker Bang Me,27,WHIP
+60,4/6,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,60,AVG
+7,3,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,7,R
+13,2,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,13,RBI
+16,0,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,16,SB
+23,8,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,23,TB
+4,.750,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,4,OBP
+50,0.0,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,50,IP
+28,0,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,28,W
+32,0,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,32,SV
+42,0,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,42,K
+26,,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,26,ERA
+27,,2017-04-04,370.l.107101.t.3,Its Still Saudomy in Texas,Dae-Ho! Daylight com,27,WHIP
+60,1/4,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,60,AVG
+7,0,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,7,R
+13,0,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,13,RBI
+16,0,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,16,SB
+23,1,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,23,TB
+4,.250,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,4,OBP
+50,-,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,50,IP
+28,-,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,28,W
+32,-,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,32,SV
+42,-,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,42,K
+26,-,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,26,ERA
+27,-,2017-04-04,370.l.107101.t.4,Eric N,d'arnaud bad days,27,WHIP
+60,1/7,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,60,AVG
+7,1,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,7,R
+13,0,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,13,RBI
+16,0,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,16,SB
+23,2,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,23,TB
+4,.400,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,4,OBP
+50,-,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,50,IP
+28,-,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,28,W
+32,-,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,32,SV
+42,-,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,42,K
+26,-,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,26,ERA
+27,-,2017-04-04,370.l.107101.t.5,Edward Moser,Grandal Hotel Abyss,27,WHIP
+60,3/14,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,60,AVG
+7,0,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,7,R
+13,0,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,13,RBI
+16,0,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,16,SB
+23,4,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,23,TB
+4,.312,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,4,OBP
+50,-,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,50,IP
+28,-,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,28,W
+32,-,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,32,SV
+42,-,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,42,K
+26,-,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,26,ERA
+27,-,2017-04-04,370.l.107101.t.6,Mike Cardarelli,Lindsanity,27,WHIP
+60,6/21,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,60,AVG
+7,4,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,7,R
+13,0,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,13,RBI
+16,0,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,16,SB
+23,8,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,23,TB
+4,.348,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,4,OBP
+50,-,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,50,IP
+28,-,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,28,W
+32,-,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,32,SV
+42,-,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,42,K
+26,-,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,26,ERA
+27,-,2017-04-04,370.l.107101.t.7,Andrew,Meet the Matz,27,WHIP
+60,0/1,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,60,AVG
+7,0,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,7,R
+13,0,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,13,RBI
+16,0,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,16,SB
+23,0,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,23,TB
+4,.000,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,4,OBP
+50,10.2,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,50,IP
+28,0,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,28,W
+32,1,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,32,SV
+42,12,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,42,K
+26,4.22,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,26,ERA
+27,1.03,2017-04-04,370.l.107101.t.8,wutang,Mookie Fucking Betts,27,WHIP
+60,3/11,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,60,AVG
+7,3,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,7,R
+13,3,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,13,RBI
+16,0,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,16,SB
+23,7,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,23,TB
+4,.429,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,4,OBP
+50,0.0,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,50,IP
+28,0,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,28,W
+32,0,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,32,SV
+42,0,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,42,K
+26,,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,26,ERA
+27,,2017-04-04,370.l.107101.t.9,ptb,hunger thames 🦏🍗🍗,27,WHIP
+60,5/16,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,60,AVG
+7,3,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,7,R
+13,2,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,13,RBI
+16,0,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,16,SB
+23,9,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,23,TB
+4,.389,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,4,OBP
+50,21.2,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,50,IP
+28,1,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,28,W
+32,0,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,32,SV
+42,22,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,42,K
+26,5.40,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,26,ERA
+27,1.62,2017-04-04,370.l.107101.t.10,Mike,Starling and scrubs,27,WHIP
+60,2/7,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,60,AVG
+7,0,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,7,R
+13,0,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,13,RBI
+16,0,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,16,SB
+23,2,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,23,TB
+4,.286,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,4,OBP
+50,0.0,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,50,IP
+28,0,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,28,W
+32,0,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,32,SV
+42,0,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,42,K
+26,,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,26,ERA
+27,,2017-04-04,370.l.107101.t.11,Moacir,ʎɐʍɐ ǝlɐs ǝɯoɔ,27,WHIP
+60,1/11,2017-04-04,370.l.107101.t.12,alm,lindor recess,60,AVG
+7,1,2017-04-04,370.l.107101.t.12,alm,lindor recess,7,R
+13,2,2017-04-04,370.l.107101.t.12,alm,lindor recess,13,RBI
+16,0,2017-04-04,370.l.107101.t.12,alm,lindor recess,16,SB
+23,4,2017-04-04,370.l.107101.t.12,alm,lindor recess,23,TB
+4,.231,2017-04-04,370.l.107101.t.12,alm,lindor recess,4,OBP
+50,4.0,2017-04-04,370.l.107101.t.12,alm,lindor recess,50,IP
+28,0,2017-04-04,370.l.107101.t.12,alm,lindor recess,28,W
+32,0,2017-04-04,370.l.107101.t.12,alm,lindor recess,32,SV
+42,5,2017-04-04,370.l.107101.t.12,alm,lindor recess,42,K
+26,0.00,2017-04-04,370.l.107101.t.12,alm,lindor recess,26,ERA
+27,0.25,2017-04-04,370.l.107101.t.12,alm,lindor recess,27,WHIP
