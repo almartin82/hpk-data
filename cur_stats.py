@@ -4,7 +4,7 @@ import yahoo_api, functions, resources
 #standard
 from getpass import getuser
 from datetime import date, timedelta
-from time import gmtime, strftime
+from time import gmtime, strftime, sleep
 from getpass import getuser
 import os
 
@@ -13,6 +13,7 @@ import yaml
 import pandas
 import tinys3
 import mandrill
+import requests
 
 #heroku or local
 if getuser() == 'almartin':
@@ -48,40 +49,56 @@ y = yahoo_api.YahooAPI(
     session_handle=session_handle
 )
 
-d = resources.yr_2015
+d = resources.yr_2017
 dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days + 1)]
 #dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days - 90)]
 
 stat_df = pandas.DataFrame()
 
+def request_and_process(r, times = 0):
+    raw = y.api_query(r)
+    if times > 0:
+        print('request and process called after failure.')
+        print(raw)
+    try:
+        df = functions.process_team_stats(raw)
+        return df
+    except TypeError:
+        print('processing team stats failed')
+        print(Exception)
+        sleep(5)
+        request_and_process(r, times = times + 1)
+
 for day in dd:
     print(day)
+
     for team in resources.hpk_teams_cur:
+        print(team)
+
         r = functions.make_daily_stats_req(team, day)
-        raw = y.api_query(r)
-        df = functions.process_team_stats(raw)
+        df = request_and_process(r)
         stat_df = stat_df.append(df)
 
 #up to s3
 conn = tinys3.Connection(aws_access_key, aws_secret_access_key, tls=True)
-stat_df.to_csv('hpk_2015.csv', index=False, encoding='utf-8')
-f = open('hpk_2015.csv','rb')
-conn.upload('hpk_2015.csv', f, 'hpk')
+stat_df.to_csv('hpk_2017.csv', index=False, encoding='utf-8')
+f = open('hpk_2017.csv','rb')
+conn.upload('hpk_2017.csv', f, 'hpk')
 print(conn)
 
 #send receipt email to ALM
-mandrill_client = mandrill.Mandrill(mandrill_key)
-message = {
-    'from_email': 'datarobot@hpkdiaspora.com',
-    'from_name': 'hpk data robot',
-    'subject': 'grabbed 2015 standings successfully',
-    'text': 'heroku process ran at ' + strftime("%Y-%m-%d %H:%M:%S", gmtime()),
-    'to': [
-        {'email': 'almartin@gmail.com',
-         'name': 'Andrew Martin',
-         'type': 'to'}]
-}
-result = mandrill_client.messages.send(message=message)
+# mandrill_client = mandrill.Mandrill(mandrill_key)
+# message = {
+#     'from_email': 'datarobot@hpkdiaspora.com',
+#     'from_name': 'hpk data robot',
+#     'subject': 'grabbed 2015 standings successfully',
+#     'text': 'heroku process ran at ' + strftime("%Y-%m-%d %H:%M:%S", gmtime()),
+#     'to': [
+#         {'email': 'almartin@gmail.com',
+#          'name': 'Andrew Martin',
+#          'type': 'to'}]
+# }
+# result = mandrill_client.messages.send(message=message)
 
 #dead man's snitch
 requests.get('https://nosnch.in/414bc5d315')
