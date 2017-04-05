@@ -21,4 +21,4 @@ y = yahoo_api.YahooAPI(
 
 mlb_url = 'http://fantasysports.yahooapis.com/fantasy/v2/game/mlb'
 raw = y.api_query(mlb_url)
-print raw
+print(raw)
