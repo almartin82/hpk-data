@@ -18,6 +18,13 @@ def make_daily_stats_req(team, date):
     return final
 
 
+def make_daily_roster_request(team, date):
+    base = "http://fantasysports.yahooapis.com/fantasy/v2/team/"
+    sub_resource = "/roster;date="
+    final = base + team + sub_resource + str(date)
+    return final
+
+
 def make_owner_details_req(team_key):
     base = "http://fantasysports.yahooapis.com/fantasy/v2/team/"
     final = base + team_key
@@ -63,6 +70,47 @@ def process_team_stats(raw):
     df = pd.concat([df, resources.stat_names], axis=1, join='inner')
     return df
 
+
+def process_team_rosters(raw):
+    #grab the player part of the dict
+    players = raw['fantasy_content']['team']['roster']['players']['player']
+    #convert to df
+    df = pd.DataFrame.from_dict(players)
+
+    #lots o processing here
+    df.drop(['batting_order', 'editorial_player_key',
+           'editorial_team_full_name', 'editorial_team_key',
+           'has_player_notes', 'has_recent_player_notes', 'headshot',
+           'starting_status', 'uniform_number'], axis=1, inplace=True)
+    df['team_key'] = raw['fantasy_content']['team']['team_key']
+    df['team_name'] = raw['fantasy_content']['team']['name']
+
+    df['date'] = [d.get('date') for d in df.selected_position]
+    df['eligible'] = [d.get('position') for d in df.eligible_positions]
+    df['played'] = [d.get('position') for d in df.selected_position]
+
+    df['fullname'] = [d.get('full') for d in df.name]
+    df['firstname'] = [d.get('first') for d in df.name]
+    df['lastname'] = [d.get('last') for d in df.name]
+
+    df.drop(['selected_position', 'eligible_positions', 'name'], axis=1, inplace=True)
+
+    print(df)
+    return df
+
+    # stats = raw['fantasy_content']['team']['team_stats']['stats']['stat']
+    # #convert to df
+    # df = pd.DataFrame.from_dict(stats)
+    # df['date'] = raw['fantasy_content']['team']['team_stats']['date']
+    # df['team_key'] = raw['fantasy_content']['team']['team_key']
+    #
+    # #managers can sometimes have co-managers.  collapse.
+    # managers = process_managers(raw['fantasy_content']['team']['managers']['manager'])
+    # df['manager'] = managers
+    # df['team_name'] = raw['fantasy_content']['team']['name']
+    # #convert the stat id to stat name
+    # df = pd.concat([df, resources.stat_names], axis=1, join='inner')
+    # return df
 
 def process_standings(raw):
     stats = raw['fantasy_content']['league']['standings']['teams']['team']
