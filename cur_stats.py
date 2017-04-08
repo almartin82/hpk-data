@@ -53,20 +53,20 @@ d = resources.yr_2017
 dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days + 1)]
 #dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days - 90)]
 
+playerid_df = pandas.DataFrame()
 stat_df = pandas.DataFrame()
 roster_df = pandas.DataFrame()
+player_df = pandas.DataFrame()
 
 def request_and_process_team_totals(r, times = 0):
     raw = y.api_query(r)
     if times > 0:
         print('request and process called after failure.')
-        print(raw)
     try:
         df = functions.process_team_stats(raw)
         return df
     except TypeError:
         print('processing team stats failed')
-        print(Exception)
         sleep(5)
         request_and_process_team_totals(r, times = times + 1)
 
@@ -76,42 +76,83 @@ def request_and_process_team_rosters(r, times = 0):
 
     if times > 0:
         print('request and process called after failure.')
-        print(raw)
     try:
         df = functions.process_team_rosters(raw)
         return df
-    except TypeError:
-        print('processing team stats failed')
-        print(Exception)
+    except TypeError as e:
+        print('Failed: ' + str(e))
         sleep(5)
         request_and_process_team_rosters(r, times = times + 1)
+
+
+def request_and_process_player_stats(r, times = 0):
+    raw = y.api_query(r)
+
+    if times > 0:
+        print('request and process called after failure.')
+    try:
+        df = functions.process_player_stats(raw)
+        return df
+    except TypeError as e:
+        print('Failed: ' + str(e))
+        sleep(5)
+        request_and_process_player_stats(r, times = times + 1)
+
+
+def request_and_process_league_players(r, times = 0):
+    raw = y.api_query(r)
+
+    if times > 0:
+        print('request and process called after failure.')
+    try:
+        df = functions.process_league_players(raw)
+        return df
+    except TypeError as e:
+        print('Failed: ' + str(e))
+        sleep(5)
+        request_and_process_league_players(r, times = times + 1)
 
 
 for day in dd:
     print(day)
 
-    for team in resources.hpk_teams_cur[0]:
+    gameid = resources.all_leagues[0]['gameid']
+    leagueid = resources.all_leagues[0]['leagueid']
+    #get player stats for today
+    for ranges in range(0, 2000, 20):
+        print(ranges)
+        r = functions.make_league_players_req(gameid, leagueid, ranges)
+        df_lp = request_and_process_league_players(r)
+
+        print(df_lp)
+        #this_player_keys = [d.get('player_key') for d in df_lp]
+
+    #iterate over teams and get rosters and daily stats
+    for team in resources.hpk_teams_cur:
         print(team)
 
-        # rr = functions.make_daily_roster_request(team, day)
-        # dfr = request_and_process_team_rosters(rr)
-        # roster_df = roster_df.append(dfr)
+        rt = functions.make_daily_team_stats_req(team, day)
+        df = request_and_process_team_totals(rt)
+        stat_df = stat_df.append(df)
 
-        rt = functions.make_daily_stats_req(team, day)
-        dft = request_and_process_team_totals(rt)
-        stat_df = stat_df.append(dft)
+        rr = functions.make_daily_roster_request(team, day)
+        dfr = request_and_process_team_rosters(rr)
+        roster_df = roster_df.append(dfr)
+
+
 
 #up to s3
-# conn = tinys3.Connection(aws_access_key, aws_secret_access_key, tls=True)
-# stat_df.to_csv('hpk_2017.csv', index=False, encoding='utf-8')
-# f = open('hpk_2017.csv','rb')
-# conn.upload('hpk_2017.csv', f, 'hpk')
-#
-# roster_df.to_csv('hpk_2017_rosters.csv', index=False, encoding='utf-8')
-# fr = open('hpk_2017_rosters.csv','rb')
-# conn.upload('hpk_2017_rosters.csv', fr, 'hpk')
-#
-# print(conn)
+conn = tinys3.Connection(aws_access_key, aws_secret_access_key, tls=True)
+
+stat_df.to_csv('hpk_2017.csv', index=False, encoding='utf-8')
+f = open('hpk_2017.csv','rb')
+conn.upload('hpk_2017.csv', f, 'hpk')
+
+roster_df.to_csv('hpk_2017_rosters.csv', index=False, encoding='utf-8')
+f = open('hpk_2017_rosters.csv','rb')
+conn.upload('hpk_2017_rosters.csv', f, 'hpk')
+
+print(conn)
 
 #send receipt email to ALM
 # mandrill_client = mandrill.Mandrill(mandrill_key)
@@ -129,7 +170,3 @@ for day in dd:
 
 #dead man's snitch
 requests.get('https://nosnch.in/414bc5d315')
-
-#beginning of year
-#f = open('/Users/almartin/Downloads/all_owners.csv','rb')
-#conn.upload('all_owners.csv', f, 'hpk')

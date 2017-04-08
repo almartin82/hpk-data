@@ -122,4 +122,3 @@ class YahooAPI:
             print('retrying...')
             time.sleep(5)
             self.api_query(request_str = request_str, retry = retry + 1)
-

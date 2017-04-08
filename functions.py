@@ -11,7 +11,7 @@ def make_standings_req(gameid, leagueid):
     final = base + str(gameid) + '.l.' + str(leagueid) + sub_resource
     return final
 
-def make_daily_stats_req(team, date):
+def make_daily_team_stats_req(team, date):
     base = "http://fantasysports.yahooapis.com/fantasy/v2/team/"
     sub_resource = "/stats;type=date;date="
     final = base + team + sub_resource + str(date)
@@ -25,9 +25,24 @@ def make_daily_roster_request(team, date):
     return final
 
 
+def make_daily_player_stats_request(player_key, date):
+    base = "http://fantasysports.yahooapis.com/fantasy/v2/player/"
+    sub_resource = "/stats;type=date;date="
+    final = base + player_key + sub_resource + str(date)
+    return final
+
+
 def make_owner_details_req(team_key):
     base = "http://fantasysports.yahooapis.com/fantasy/v2/team/"
     final = base + team_key
+    return final
+
+
+def make_league_players_req(gameid, leagueid, start):
+    base = 'http://fantasysports.yahooapis.com/fantasy/v2/league/'
+    game_league = str(gameid) + '.l.' + str(leagueid)
+    sub_resource = '/players;start=' + str(start)
+    final = base + game_league + sub_resource
     return final
 
 
@@ -73,15 +88,26 @@ def process_team_stats(raw):
 
 def process_team_rosters(raw):
     #grab the player part of the dict
-    players = raw['fantasy_content']['team']['roster']['players']['player']
+    players = raw['fantasy_content']['team']['roster']['players']
+    #on days with no games (eg first day of season) there wont be any players
+    if players is None:
+        return pd.DataFrame()
+
+    players = players['player']
     #convert to df
     df = pd.DataFrame.from_dict(players)
 
     #lots o processing here
-    df.drop(['batting_order', 'editorial_player_key',
+    df.drop(['editorial_player_key',
            'editorial_team_full_name', 'editorial_team_key',
            'has_player_notes', 'has_recent_player_notes', 'headshot',
-           'starting_status', 'uniform_number'], axis=1, inplace=True)
+           'uniform_number'], axis=1, inplace=True)
+
+    if 'batting_order' in df.keys():
+        df.drop(['batting_order'], axis=1, inplace=True)
+    if 'starting_status' in df.keys():
+        df.drop(['starting_status'], axis=1, inplace=True)
+
     df['team_key'] = raw['fantasy_content']['team']['team_key']
     df['team_name'] = raw['fantasy_content']['team']['name']
 
@@ -95,22 +121,31 @@ def process_team_rosters(raw):
 
     df.drop(['selected_position', 'eligible_positions', 'name'], axis=1, inplace=True)
 
-    print(df)
     return df
 
-    # stats = raw['fantasy_content']['team']['team_stats']['stats']['stat']
-    # #convert to df
-    # df = pd.DataFrame.from_dict(stats)
-    # df['date'] = raw['fantasy_content']['team']['team_stats']['date']
-    # df['team_key'] = raw['fantasy_content']['team']['team_key']
-    #
-    # #managers can sometimes have co-managers.  collapse.
-    # managers = process_managers(raw['fantasy_content']['team']['managers']['manager'])
-    # df['manager'] = managers
-    # df['team_name'] = raw['fantasy_content']['team']['name']
-    # #convert the stat id to stat name
-    # df = pd.concat([df, resources.stat_names], axis=1, join='inner')
-    # return df
+
+def process_league_players(raw):
+    player_list = raw['fantasy_content']['league']['players']
+    #if we've gone too high player_list will be None
+    if player_list is None:
+        print('empty')
+        return []
+    player_list = player_list['player']
+    out = [d.get('player_key') for d in player_list]
+
+    return out
+
+
+def process_player_stats(raw):
+    #grab the player stats of the dict
+    players = raw['fantasy_content']['league']
+
+    print(players.keys)
+
+    df = players
+
+    return df
+
 
 def process_standings(raw):
     stats = raw['fantasy_content']['league']['standings']['teams']['team']
