@@ -138,8 +138,12 @@ def process_league_players(raw):
 
 def process_player_stats(raw):
     #grab the player stats of the dict
-    players = raw['fantasy_content']['league']
+    player_stats = raw['fantasy_content']['player']['player_stats']
+    if player_stats is None:
+        return 
+    ['stats']
 
+    df = pd.DataFrame.from_dict(player)
     print(players.keys)
 
     df = players

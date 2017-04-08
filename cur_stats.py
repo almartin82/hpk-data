@@ -122,9 +122,15 @@ for day in dd:
     for ranges in range(0, 2000, 20):
         print(ranges)
         r = functions.make_league_players_req(gameid, leagueid, ranges)
-        df_lp = request_and_process_league_players(r)
+        player_ids = request_and_process_league_players(r)
 
-        print(df_lp)
+        for player in player_ids:
+            print(player)
+            rp = functions.make_daily_player_stats_request(player, day)
+            dfp = request_and_process_player_stats(rp)
+            print(dfp)
+
+
         #this_player_keys = [d.get('player_key') for d in df_lp]
 
     #iterate over teams and get rosters and daily stats
