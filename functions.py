@@ -140,13 +140,12 @@ def process_player_stats(raw):
     #grab the player stats of the dict
     player_stats = raw['fantasy_content']['player']['player_stats']
     if player_stats is None:
-        return 
-    ['stats']
+        return
 
-    df = pd.DataFrame.from_dict(player)
-    print(players.keys)
-
-    df = players
+    player_stats = player_stats['stats']['stat']
+    df = pd.DataFrame(player_stats)
+    df['player_key'] = raw['fantasy_content']['player']['player_key']
+    df['date'] = raw['fantasy_content']['player']['player_stats']['date']
 
     return df
 

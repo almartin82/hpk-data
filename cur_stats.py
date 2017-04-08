@@ -56,7 +56,7 @@ dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days + 1)]
 playerid_df = pandas.DataFrame()
 stat_df = pandas.DataFrame()
 roster_df = pandas.DataFrame()
-player_df = pandas.DataFrame()
+player_stats_df = pandas.DataFrame()
 
 def request_and_process_team_totals(r, times = 0):
     raw = y.api_query(r)
@@ -128,10 +128,9 @@ for day in dd:
             print(player)
             rp = functions.make_daily_player_stats_request(player, day)
             dfp = request_and_process_player_stats(rp)
-            print(dfp)
 
-
-        #this_player_keys = [d.get('player_key') for d in df_lp]
+            print(dfp.head(2))
+            player_stats_df = player_stats_df.append(dfp)
 
     #iterate over teams and get rosters and daily stats
     for team in resources.hpk_teams_cur:
@@ -157,6 +156,10 @@ conn.upload('hpk_2017.csv', f, 'hpk')
 roster_df.to_csv('hpk_2017_rosters.csv', index=False, encoding='utf-8')
 f = open('hpk_2017_rosters.csv','rb')
 conn.upload('hpk_2017_rosters.csv', f, 'hpk')
+
+player_stats_df.to_csv('hpk_2017_players.csv', index=False, encoding='utf-8')
+f = open('hpk_2017_players.csv','rb')
+conn.upload('hpk_2017_players.csv', f, 'hpk')
 
 print(conn)
 
