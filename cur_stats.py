@@ -50,7 +50,7 @@ y = yahoo_api.YahooAPI(
 )
 
 d = resources.yr_2017
-dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days + 1)]
+dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days + 0)]
 #dd = [d[0] + timedelta(days=x) for x in range((d[1]-d[0]).days - 90)]
 
 playerid_df = pandas.DataFrame()
@@ -92,6 +92,9 @@ def request_and_process_player_stats(r, times = 0):
         print('request and process called after failure.')
     try:
         df = functions.process_player_stats(raw)
+        if df is None:
+            print(raw)
+            request_and_process_player_stats(r, times = times + 1)
         return df
     except TypeError as e:
         print('Failed: ' + str(e))
@@ -106,6 +109,10 @@ def request_and_process_league_players(r, times = 0):
         print('request and process called after failure.')
     try:
         df = functions.process_league_players(raw)
+        if df is None:
+            print(raw)
+            print('****** EMPTY PLAYER ROSTER?! ******')
+            request_and_process_league_players(r, times = times + 1)
         return df
     except TypeError as e:
         print('Failed: ' + str(e))
@@ -123,14 +130,20 @@ for day in dd:
         print(ranges)
         r = functions.make_league_players_req(gameid, leagueid, ranges)
         player_ids = request_and_process_league_players(r)
+        print(player_ids)
 
         for player in player_ids:
             print(player)
             rp = functions.make_daily_player_stats_request(player, day)
-            dfp = request_and_process_player_stats(rp)
+            try:
+                dfp = request_and_process_player_stats(rp)
+            except Exception as e:
+                dfp = request_and_process_player_stats(rp)
+            if isinstance(dfp, pandas.DataFrame):
+                print(dfp.head(2))
+                player_stats_df = player_stats_df.append(dfp)
 
-            print(dfp.head(2))
-            player_stats_df = player_stats_df.append(dfp)
+    player_stats_df.to_csv('player_stats_' + str(day) + '.csv', index=False, encoding='utf-8')
 
     #iterate over teams and get rosters and daily stats
     for team in resources.hpk_teams_cur:

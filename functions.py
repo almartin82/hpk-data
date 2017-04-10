@@ -11,6 +11,7 @@ def make_standings_req(gameid, leagueid):
     final = base + str(gameid) + '.l.' + str(leagueid) + sub_resource
     return final
 
+
 def make_daily_team_stats_req(team, date):
     base = "http://fantasysports.yahooapis.com/fantasy/v2/team/"
     sub_resource = "/stats;type=date;date="
@@ -130,6 +131,12 @@ def process_league_players(raw):
     if player_list is None:
         print('empty')
         return []
+
+    #seeing some weird errors.  print the content if it's not a dict
+    if not isinstance(player_list, dict):
+        print('LOOK HERE')
+        print(player_list)
+
     player_list = player_list['player']
     out = [d.get('player_key') for d in player_list]
 

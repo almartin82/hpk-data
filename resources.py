@@ -95,7 +95,7 @@ all_hpk_teams = hpk_teams_cur + hpk_teams_2016 + hpk_teams_2015 + \
                 hpk_teams_2008 + hpk_teams_2007 + hpk_teams_2006 + hpk_teams_2005
 
 #### START/END YEARS ####
-yr_2017 = [date(2017, 4, 02), date.today()]
+yr_2017 = [date(2017, 4, 03), date.today()]
 yr_2016 = [date(2016, 4, 03), date(2016, 10, 2)]
 yr_2015 = [date(2015, 4, 05), date(2015, 10, 4)]
 yr_2014 = [date(2014, 3, 22), date(2014, 9, 28)]
