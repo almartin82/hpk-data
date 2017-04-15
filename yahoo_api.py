@@ -116,9 +116,11 @@ class YahooAPI:
             print(resp.status_code)
             print('999 status code, sleeping for 1 min')
             time.sleep(60)
+            self.api_query(request_str = request_str, retry = retry + 1)
         #we are getting random status 500s from yahoo?!
         else:
             print(resp.status_code)
+            print(resp.content)
             print('retrying...')
             time.sleep(5)
             self.api_query(request_str = request_str, retry = retry + 1)

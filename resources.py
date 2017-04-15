@@ -3,7 +3,7 @@ import pandas as pd
 
 ### STATS and IDs
 stat_names = pd.DataFrame(
-    {'stat_id': [60, 7, 13, 16, 23, 4, 50, 28, 32, 42, 26, 27],
+    {'stat_id': ['60', '7', '13', '16', '23', '4', '50', '28', '32', '42', '26', '27'],
      'stat_name': ['AVG', 'R', 'RBI', 'SB', 'TB', 'OBP', 'IP', 'W', 'SV', 'K', 'ERA', 'WHIP']}
 )
 

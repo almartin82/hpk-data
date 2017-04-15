@@ -83,7 +83,7 @@ def process_team_stats(raw):
     df['manager'] = managers
     df['team_name'] = raw['fantasy_content']['team']['name']
     #convert the stat id to stat name
-    df = pd.concat([df, resources.stat_names], axis=1, join='inner')
+    df = df.set_index('stat_id').join(resources.stat_names.set_index('stat_id'), how='inner')
     return df
 
 
@@ -101,13 +101,15 @@ def process_team_rosters(raw):
     #lots o processing here
     df.drop(['editorial_player_key',
            'editorial_team_full_name', 'editorial_team_key',
-           'has_player_notes', 'has_recent_player_notes', 'headshot',
+           'has_player_notes', 'headshot',
            'uniform_number'], axis=1, inplace=True)
 
     if 'batting_order' in df.keys():
         df.drop(['batting_order'], axis=1, inplace=True)
     if 'starting_status' in df.keys():
         df.drop(['starting_status'], axis=1, inplace=True)
+    if 'has_recent_player_notes' in df.keys():
+        df.drop(['has_recent_player_notes'], axis=1, inplace=True)
 
     df['team_key'] = raw['fantasy_content']['team']['team_key']
     df['team_name'] = raw['fantasy_content']['team']['name']

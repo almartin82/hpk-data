@@ -2,11 +2,11 @@
 import yahoo_api, functions, resources
 
 #standard
-from getpass import getuser
 from datetime import date, timedelta
 from time import gmtime, strftime, sleep
 from getpass import getuser
 import os
+import pickle
 
 #external (remember to update requirements.txt for heroku)
 import yaml
@@ -58,12 +58,14 @@ stat_df = pandas.DataFrame()
 roster_df = pandas.DataFrame()
 player_stats_df = pandas.DataFrame()
 
+
 def request_and_process_team_totals(r, times = 0):
     raw = y.api_query(r)
     if times > 0:
         print('request and process called after failure.')
     try:
         df = functions.process_team_stats(raw)
+        print(df)
         return df
     except TypeError:
         print('processing team stats failed')
@@ -120,30 +122,41 @@ def request_and_process_league_players(r, times = 0):
         request_and_process_league_players(r, times = times + 1)
 
 
+#what have we already done?
+lp_complete = pickle.load(open('lp_complete.pickle', 'rb'))
+
 for day in dd:
     print(day)
 
-    gameid = resources.all_leagues[0]['gameid']
-    leagueid = resources.all_leagues[0]['leagueid']
-    #get player stats for today
-    for ranges in range(0, 2000, 20):
-        print(ranges)
-        r = functions.make_league_players_req(gameid, leagueid, ranges)
-        player_ids = request_and_process_league_players(r)
-        print(player_ids)
+    player_stats_df = pandas.DataFrame()
 
-        for player in player_ids:
-            print(player)
-            rp = functions.make_daily_player_stats_request(player, day)
-            try:
-                dfp = request_and_process_player_stats(rp)
-            except Exception as e:
-                dfp = request_and_process_player_stats(rp)
-            if isinstance(dfp, pandas.DataFrame):
-                print(dfp.head(2))
-                player_stats_df = player_stats_df.append(dfp)
+    if not day in lp_complete:
+        gameid = resources.all_leagues[0]['gameid']
+        leagueid = resources.all_leagues[0]['leagueid']
+        #get player stats for today
+        for ranges in range(0, 2000, 20):
+            print(ranges)
+            r = functions.make_league_players_req(gameid, leagueid, ranges)
+            player_ids = request_and_process_league_players(r)
+            print(player_ids)
+            if player_ids is None:
+                player_ids = request_and_process_league_players(r)
 
-    player_stats_df.to_csv('player_stats_' + str(day) + '.csv', index=False, encoding='utf-8')
+            for player in player_ids:
+                print(player)
+                rp = functions.make_daily_player_stats_request(player, day)
+                try:
+                    dfp = request_and_process_player_stats(rp)
+                except Exception as e:
+                    dfp = request_and_process_player_stats(rp)
+                if isinstance(dfp, pandas.DataFrame):
+                    print(dfp.head(2))
+                    player_stats_df = player_stats_df.append(dfp)
+
+        lp_complete.append(day)
+        pickle.dump(lp_complete, open('lp_complete.pickle', 'wb'))
+        player_stats_df.drop_duplicates(inplace = True)
+        player_stats_df.to_csv('player_stats_' + str(day) + '.csv', index=False, encoding='utf-8')
 
     #iterate over teams and get rosters and daily stats
     for team in resources.hpk_teams_cur:
