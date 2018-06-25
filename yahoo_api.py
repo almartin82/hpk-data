@@ -25,13 +25,12 @@ class YahooAPI:
                 "session_handle": session_handle
             }
 
-        self.oauth = rauth.OAuth1Service(
-            consumer_key=consumer_key,
-            consumer_secret=consumer_secret,
+        self.oauth = rauth.OAuth2Service(
+            client_id=consumer_key,
+            client_secret=consumer_secret,
             name="yahoo",
-            request_token_url="https://api.login.yahoo.com/oauth/v2/get_request_token",
-            access_token_url="https://api.login.yahoo.com/oauth/v2/get_token",
-            authorize_url="https://api.login.yahoo.com/oauth/v2/request_auth",
+            authorize_url="https://api.login.yahoo.com/oauth2/request_auth",
+            access_token_url="https://api.login.yahoo.com/oauth2/get_token",
             base_url="http://fantasysports.yahooapis.com/")
 
         self.last_request = time.time()
@@ -45,7 +44,7 @@ class YahooAPI:
 
         else:
             request_token, request_token_secret = \
-                self.oauth.get_request_token(params={"oauth_callback": "oob"})
+                self.oauth.get_access_token(params={"oauth_callback": "oob"})
 
             authorize_url = self.oauth.get_authorize_url(request_token)
 
